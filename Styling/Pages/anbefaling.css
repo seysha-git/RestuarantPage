@@ -1,0 +1,100 @@
+@import url('../Components/Navigation.css');
+@import url('../Effects/Animations.css');
+@import url('../Components/Root.css');
+@import url('../Components/Footer.css');
+
+
+.reviews-page{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+
+}
+
+.exit{
+    position: relative;
+    left: 80px;
+}
+
+.main-images{
+    background-image: url('../../Images/Food/menuItem3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    filter: brightness(0.6);
+}
+
+.main-reviews{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.reviews-title{
+    padding-top: 6em;
+}
+.reviews-title h1{
+    font-size: 60px;
+    font-family: var(--main-font);
+    color: var(--ligth-yellow);
+    font-weight: lighter;
+}
+hr{
+    margin: -2em auto;
+    width: 100px;
+    border: 2px solid var(--dark-red);
+}
+
+.reviews-title p{
+    margin-top: 2em;
+    font-size: 35px;
+    font-family: var(--main-font);
+    font-weight: lighter;
+}
+
+
+.reviews-quotes{
+    padding-top: 0em;
+    width: 70%;
+    margin: -1em auto;
+    border-radius: 20px;
+}
+.reviews-quotes p{
+    padding-top: 1em;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    padding-bottom: 3em;
+    line-height: 2em;
+}
+
+
+.reviews-quotes h4{
+    margin-top: -1.5em;
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+    padding-bottom: 2em;
+}
+
+@media screen and (max-width: 700px) {
+    .reviews-page{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-areas: 
+        'r'
+        'i'
+        ;
+    
+    
+    }
+
+    .main-images{
+        grid-area: i;
+    }
+    .main-reviews{
+        grid-area: r;
+    }
+}
+

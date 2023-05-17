@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styling/Pages/meny.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-menu">
+            <div class="nav-title">
+                <a href="../index.html"><img src="../Images/Icons/utensil.svg"  height="50px" width="50px"/></a>
+                <img src="../images/Icons/xmark-solid.svg" height="50px" width="50px" class="exit" />
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li class="link"><a href="../index.html">Hjem</a></li>
+                    <li class="link"><a href="./meny.html">Meny</a></li>
+                    <li class="link"><a href="./bestill.html">Bestill</a></li>
+                    <li class="link"><a href="./anbefaling.html">Anm</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="nav-burger">
+                <div class="burger-Line"></div>
+                <div class="burger-Line"></div>
+                <div class="burger-Line"></div>
+            </div>
+        </div>
+        <div class="shopping-cart">
+                <img src="../Images/Icons/cart-shopping-solid.svg" height="35px" width="35px"/>
+                <div class="item-counter">
+                    <button class="item-counter"><span id="counter">0 </span> varer  <img src="../Images/Icons/caretD.svg" height="20px" width="20px" id ="caretDown"/>    </button>
+                </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="order title">
+            <div class="order-title">
+                <h3>Din bestilling</h3>
+            </div>
+            <div class="order-container">
+            </div>
+            <div class="order-submit">
+                <div class="sum-order">
+                    <h3>Total sum:</h3>
+                    <h3 id="totalSum">0kr</h3>
+                </div>
+                <div class="button-order">
+                    <a href="./bestilling.html"><button class="btn-order">Bestill</button></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <figure>
+        <div class="modal">
+            <div class="modal-title">
+                <h1>Velkommen til vår meny</h1>
+            </div>
+            <div class="modal-text">
+                <div class="modal-list">
+                    <div class="place">
+                        <div class="place-title">
+                            <h3>Din restuarant</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="radio" name="place" class="placeInput" value="haslum">
+                                <label>Haslum</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="place" class="placeInput" value="sandvika"/>
+                                <label>Sandvika</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="place" class="placeInput" value="bekkestua"/>
+                                <label>Bekkestua</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="delivery">
+                        <div class="delivery-title">
+                            <h3>Henting / Levering</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="radio" name="delivery" class="deliveryInput" value="henting">
+                                <label>Henting</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="delivery"class="deliveryInput"value="levering" />
+                                <label>Levering</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subM-text">
+                    <p>OBS! Vi tar bare imot betaling i form av kontant så man må betale ved kassen </p>
+                    </p>
+                    <a href="./meny.html"><button type="button" id="modal-btn">Videre</button></a>
+                </div>
+            </div>
+        </div>
+
+    </figure>
+
+    <main>
+        <div class="main-title">
+            <div class="mt-text">
+                <h1>Vår Meny</h1>
+                <p id="placeInfo"></p>
+            </div>
+            <div class="nav-buttons paras">
+                <button class="nav-button" id="pizza">Pizza</button>
+                <button class="nav-button" id="burger">Burger</button>
+                <button class="nav-button" id="kebab">Kebab</button>
+                <button class="nav-button" id="drikke">Drikker</button>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="grid-container">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-icon">
+            <img src="../Images/Icons/utensil.svg"  height="50px" width="50px" id="icon"/>
+        </div>
+        <div class="footer-text">
+            <div class="about">
+                <h2>Om oss</h2>
+                <p>The sky was a deep shade of blue, with The sky was a deep shade of blue, with . The sky was a deep shade of blue, with The sky was a deep shade of blue, with  The sky was a deep shade of blue, with The sky was a deep shade of blue, with  </p>
+            </div>
+            <div class="sources">
+                <h2>Sources</h2>
+                <ul>
+                    <li>https://nicepage.com</li>
+                    <li>https://www.figma.com</li>
+                    <li>https://www.pexels.com<li>
+                    <li>https://fontawesome.com/<li>
+                    <li>https://fontawesome.com/<li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>Ta kontakt</h2>
+                <div class="map">
+                    <img src="../images/Icons/map-solid.svg" height="20px" width="20px" />
+                    <h5>Blomsterkroken, 39 Haslum</h5>
+                </div>
+                <div class="phone">
+                    <img src="../images/Icons/phone-solid.svg" height="20px" width="20px" />
+                    <h5>+47 908 111 72 / +47 908 321 82</h5>
+                </div>
+                <div class="mail">
+                    <img src="../images/Icons/envelope-solid.svg" height="20px" width="20px" />
+                    <h5>Email: seyontennis@gmail.com</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+<script src="../Js/mainSrc/Base.js"></script>
+<script src="../Js/mainSrc/Effects.js"></script> 
+<script src="../Js/menuSrc/meny.js"></script> 
+
+
+
+</body>
+</html>
+
+ 

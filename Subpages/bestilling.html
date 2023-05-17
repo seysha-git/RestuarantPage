@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styling/Pages/bestilling.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-menu">
+            <div class="nav-title">
+                <a href="../index.html"><img src="../Images/Icons/utensil.svg"  height="50px" width="50px"/></a>
+                <img src="../images/Icons/xmark-solid.svg" height="50px" width="50px" class="exit" />
+                <div class="cross">
+                    <div class="cross-line1"></div>
+                    <div class="cross-line2"></div>
+                </div>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li class="link"><a href="../index.html">Hjem</a></li>
+                    <li class="link"><a href="./meny.html">Meny</a></li>
+                    <li class="link"><a href="#">Bestill</a></li>
+                    <li class="link"><a href="./anbefaling.html">Annmeldelser</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="nav-burger">
+                <div class="burger-Line"></div>
+                <div class="burger-Line"></div>
+                <div class="burger-Line"></div>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="main-title">
+            <h1 class="title">Din bestilling</h1>
+        </div>
+    </main>
+
+    <section>
+        <div class="order-section">
+            <div class="order-infos">
+                <div class="order-info-title">
+                    <h2>Kostnader</h2>
+                    <p>Se dine kostnader</p>
+                </div>
+                <div class="order-info-prices">
+                    <div class="prices-sum">
+                        <h3>Sum varer: </h3>
+                        <h3>250kr</h3>
+                    </div>
+                    <div class="prices-mva">
+                        <h4>Herav mva(15%): </h4>
+                        <h4>43.4kr</h4>
+                    </div>
+                    <div class="prices-offer">
+                        <h4 id="price-offer">Legg til rabattkode</h4>
+                        <div class="input-offer">
+                            <input type="text" id="text-offer">
+                            <button id="input-label">Ok</button>  
+                        </div>
+                    </div>
+                </div>
+                <div class="order-info-button">
+                    <a href="thankyou.html"><button type="button">Betal nå</button></a>
+                </div>
+            </div>
+            <div class="order-items">   
+                <table >     
+                      <thead id="title">
+                        <tr>
+                            <th id="order-title">Dine retter</th>
+                            <th>Pris</th>
+                            <th>Antall</th>
+                            <th>Total</th>
+                            <th><button class="clear-btn">Clear cart</button></th>
+                        </tr>
+                      </thead>
+                      <tbody id="items">
+                        
+                      </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer-icon">
+            <img src="../Images/Icons/utensil.svg"  height="50px" width="50px" id="icon"/>
+        </div>
+        <div class="footer-text">
+            <div class="about">
+                <h2>Om oss</h2>
+                <p>The sky was a deep shade of blue, with The sky was a deep shade of blue, with . The sky was a deep shade of blue, with The sky was a deep shade of blue, with  The sky was a deep shade of blue, with The sky was a deep shade of blue, with  </p>
+            </div>
+            <div class="sources">
+                <h2>Sources</h2>
+                <ul>
+                    <li>https://nicepage.com</li>
+                    <li>https://www.figma.com</li>
+                    <li>https://www.pexels.com<li>
+                    <li>https://fontawesome.com/<li>
+                    <li>https://fontawesome.com/<li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>Ta kontakt</h2>
+                <div class="map">
+                    <img src="../images/Icons/map-solid.svg" height="20px" width="20px" />
+                    <h5>Blomsterkroken, 39 Haslum</h5>
+                </div>
+                <div class="phone">
+                    <img src="../images/Icons/phone-solid.svg" height="20px" width="20px" />
+                    <h5>+47 908 111 72 / +47 908 321 82</h5>
+                </div>
+                <div class="mail">
+                    <img src="../images/Icons/envelope-solid.svg" height="20px" width="20px" />
+                    <h5>Email: seyontennis@gmail.com</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="../Js/mainSrc/Base.js"></script>
+<script src="../Js/mainSrc/Effects.js"></script> 
+<script src="../Js/menuSrc/bestill.js"></script> 
+<script src="../Js/menuSrc/Data.js"></script> 
+<script src="../Js/menuSrc/cart.js"></script> 
+<script src="../Js/menuSrc/countdown.js"></script> 
+
+</body>
+

@@ -1,0 +1,45 @@
+footer{
+    width: 100%;
+    background-color: var(--b1color);
+}
+
+.footer-icon{
+    padding-top: 3em;
+    text-align: center;
+}
+
+.footer-text{
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2.5em;
+
+}
+.sources h2{
+    margin-left: 1em;
+}
+ul li{
+    padding-bottom: 0.8em;
+    display: table;
+    margin: 0 auto;
+    list-style: none;
+    max-width: 50%;
+}
+
+
+.about p{
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 2em;
+}
+.map,
+.phone,
+.mail{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    justify-content: center;
+}

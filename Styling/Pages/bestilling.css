@@ -1,0 +1,235 @@
+@import url('../Components/Navigation.css');
+@import url('../Effects/Animations.css');
+@import url('../Components/Root.css');
+@import url('../Components/Footer.css');
+
+
+/* Main section and main infrastructure*/
+
+.exit{
+    position: relative;
+    left: 80px;
+}
+
+main{
+    margin-top: -4.1em;
+    text-align: center;
+    padding-bottom: 3em;
+    background-color: var(--b1color);
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.main-title h1{
+    color: var(--dark-red);
+    font-family: var(--main-font);
+    font-size: 100px;
+    position: relative;
+    top: 0.85em;
+
+}
+/* Section styling*/
+
+section{
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
+
+
+.order-section{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-areas: 
+    'items info'
+    
+    ;
+    gap: 1em;
+    padding-right: 8em;
+    padding-left: 3em;
+    grid-auto-flow: column;
+}
+
+
+
+/* info-items section*/
+
+
+
+.order-items{
+    grid-area: items;
+    max-height: 420px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.order-infos{
+    grid-area: info;
+    border-left: 4px solid #000000;
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-left: 4em;
+
+}
+
+.order-infos-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.order-info-title h2{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.order-info-title p{
+    margin-top: -0.5em;
+}
+
+.prices-mva{
+    margin-top: -0.5em;
+    display: flex;
+    gap: 8.4em;
+}
+.prices-sum{
+    display: flex;
+    gap: 10em;
+}
+
+.prices-offer h4{
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    padding-bottom: 1em;
+}
+.input-offer{
+    display: flex;
+    gap: 0.8em;
+    margin-left: 5em;
+    justify-content: center;
+    align-items: center;
+}
+#text-offer{
+    background-color: var(--light-yellow);
+    height: 30px;
+}
+.input-offer{
+    display: none;
+    transition: 250ms ease-in;
+}
+.inputActive{
+    display: block;
+}
+
+.order-info-button button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em auto;
+    height: 50px;
+    width: 200px;
+    border-radius: 1px;
+    background-color: var(--b3-color);
+    color: var(--light-yellow);
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 250ms ease-in;
+    cursor: pointer;
+}
+
+.order-info-button button:hover{
+    background-color: var(--light-yellow);
+    color: var(--b1color);
+}
+
+
+/* items items section */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0;
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  td, th {
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+  }
+  td{
+    padding: 20px;
+    border-spacing: 0;
+  }
+
+
+  
+  #order-title{
+    text-align: left;
+    padding-left: 1.5em;
+    font-size: 18px;
+  }
+  th{
+    border-bottom: 2px solid black;
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .food-item{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  .food-item h4{
+    width: 150px;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  #trash{
+    cursor: pointer;
+    transition: 250ms ease-in;
+  }
+  
+  .clear-btn{
+    margin-top: -0.1em;
+    height: 35px;
+    width: 90px;
+    border-radius: 5px;
+    background-color: var(--light-yellow);;
+    font-weight: bold;
+    font-size: 12px;
+    transition: 250ms ease-in;
+    cursor: pointer;
+  }
+  .clear-btn:hover{
+    background-color: var(--dark-red);
+  }
+ 
+
+/* Media queries */
+
+@media screen and (max-width: 850px){
+
+    .order-section{
+    display: grid;
+    grid-template-areas: 
+    'items'
+    'info';
+    grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+    place-content: center;
+    margin: 0 auto;
+    gap: 2em;
+
+}
+.prices-mva{
+    margin-top: -0.5em;
+    display: flex;
+    gap: 3.4em;
+}
+.prices-sum{
+    display: flex;
+    gap: 5em;
+}
+
+
+}

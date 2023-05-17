@@ -1,0 +1,150 @@
+/* Burger menu */
+
+.navbar{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    height: 75px;
+    width: 100%;
+    /*
+    background-color: var(--bcolor);
+    opacity: 0.9;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 50px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    */
+    transition: ease-in-out 0.3s;
+
+}
+
+.nav-up {
+    top: -80px;
+  }
+
+.nav-burger{
+    display: flex;
+    text-align: center;
+    margin: 25px 20px;
+    flex-direction: column;
+    gap: 0.4em;
+    cursor: pointer;
+}
+.burger-Line{
+    position: relative;
+    margin-left: auto;
+    right: 10px;
+
+    width: 32px;
+    border-radius: 20px;
+    height: 4px;
+    background-color: var(--light-yellow);
+}
+
+.user img{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin: 1em 1em;
+    cursor: pointer;
+    transition: 300ms ease-in;
+}
+.user img:hover{
+    padding: 0.2em 0.2em;
+    cursor: pointer;
+}
+
+/* Navmenu*/
+
+
+.nav-menu{
+    position: relative;
+    opacity: 1;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    transform: translateX(150%);
+    transition: 300ms ease-in-out;
+    position: fixed;
+    height: 100%;
+    background-color: var(--bcolor);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;;
+}
+
+.active{
+    transform: translateX(0%);
+}
+.nav-title{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-icon{
+    position: relative;
+    right: -40px;
+    color: red;
+}
+.exit{
+    position: relative;
+    left: -40px;
+}
+.nav-title a{
+    margin-left: 2em;
+}
+
+
+
+/*
+.cross{
+    margin: -1em -0.5em;
+    cursor: pointer;
+}
+.cross-line1{
+    height: 5px;
+    width: 45px;
+    background-color: red;
+    border-radius: 40px;
+    transform: rotate(47.5deg);
+    
+}
+.cross-line2{
+    margin-top: -0.3em;
+    height: 5px;
+    width: 45px;
+    border-radius: 40px;
+    background-color: red;
+    transform: rotate(-47.5deg);
+    
+}
+
+*/
+.nav-links{
+    margin-right: 2em;
+    padding-top: 2em;
+   
+}
+
+.nav-links ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10em;
+    gap: 4em;
+    padding-bottom: 2em;
+}
+.link a{
+    font-size: 2em;
+}
+a{
+    transition: 200ms ease-in-out;
+    text-decoration: none;
+    color: var(--light-yellow);
+}
+.nav-links a:hover{
+    padding-left: 1em;
+    font-weight: bold;
+    
+}
+
+
